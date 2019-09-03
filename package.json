@@ -1,0 +1,13 @@
+{
+  "name": "skeleton-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build"
+  },
+  "dependencies": {
+    "brunch": "^2.10.17"
+  }
+}

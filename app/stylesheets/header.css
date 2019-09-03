@@ -1,0 +1,38 @@
+.header {
+  height: 600px;
+
+  padding: 20px;
+}
+
+.nav {
+  background: url(img/header.jpg);
+  min-height: 500px;
+  display: flex;
+  border: 3px solid var(--dark);
+}
+
+.brand {
+  display: inline-block;
+  color: var(--dark);
+  padding: 20px;
+  font-size: 30px;
+}
+
+.navigation {
+  padding: 20px 10px;
+}
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--blue);
+}
