@@ -35,6 +35,11 @@
   text-decoration: none;
   font-size: 20px;
   color: var(--blue);
+  cursor: pointer;
+}
+
+.navigation a:hover {
+  color: var(--light-blue);
 }
 
 * {
@@ -87,6 +92,10 @@
 .footer {
   height: 60px;
   padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .f-title {
@@ -124,6 +133,17 @@ a.phone {
 
 .copy {
   text-align: center;
+}
+
+.to-top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  background: var(--blue);
+  cursor: pointer;
 }
 
 :root {

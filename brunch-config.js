@@ -11,7 +11,7 @@ module.exports = {
   },
   modules: {
     autoRequire: {
-      'app.js': [ 'main.js' ],
+      'app.js': [ 'initialize' ],
     },
   },
   server: {

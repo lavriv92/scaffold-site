@@ -148,14 +148,24 @@ var __makeRelativeRequire = function(require, mappings, pref) {
   }
 };
 require.register("app.js", function(exports, require, module) {
+
+});
+
+;require.register("initialize.js", function(exports, require, module) {
 document.addEventListener('DOMContentLoaded', () => {
-  const link = document.querySelectorAll('.navigation a');
+  const links = document.querySelectorAll('.navigation a, .to-top');
 
-  console.log('a', link);
+  links.forEach((l) => {
+    l.addEventListener('click', (e) => {
+      e.preventDefault();
 
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log('safdsaf');
+      const section = document.querySelector(l.dataset.href);
+
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth',
+      });
+    });
   });
 });
 
@@ -165,5 +175,5 @@ require.register("___globals___", function(exports, require, module) {
   
 });})();require('___globals___');
 
-require('main.js');
+require('initialize');
 //# sourceMappingURL=app.js.map
